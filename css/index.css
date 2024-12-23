@@ -1,0 +1,390 @@
+/* 
+ * https://wicoope.github.io/shotbreaks/
+ * v0.1-modified | 20181030
+ * License: WiCoope
+ */
+
+.banner {
+  background-image: url(../image/about/banner.jpeg);
+  background-position: center;
+  color: white;
+  display: flex;
+  font-family: 'PT Serif', serif;
+  overflow-x: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner:before {
+  background: black;
+  content: ' ';
+  opacity: .5;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+.brief {
+  text-align: left;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 15%;
+  left: 12%;
+  z-index: 2;
+}
+.brief__name {
+  font-size: 4.5rem;
+  line-height: 5rem;
+}
+.brief__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.arrow {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 5vh;
+  z-index: 3;
+}
+.arrow--down {
+  display: inline-block;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.arrow--down:before {
+  color: white;
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.arrow--down:after {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.arrow--down:hover:after {
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.aboutme {
+  height: 34.5rem;
+}
+@media (max-width: 1023px) {
+  .aboutme {
+    padding: 2rem 0 4rem 0;
+    height: auto;
+    position: relative;
+  }
+}
+.aboutme__block {
+  display: flex;
+  margin: auto;
+  width: 60rem;
+}
+@media (max-width: 1023px) {
+  .aboutme__block {
+    display: block;
+    width: 100%;
+  }
+}
+.aboutme__block--left {
+  width: 40%;
+}
+@media (max-width: 1023px) {
+  .aboutme__block--left {
+    margin: auto;
+    padding: 3rem 0 1rem 0;
+    width: 80%;
+  }
+}
+.aboutme__block--right {
+  font-size: .9rem;
+  padding: 3rem 0;
+  width: 60%;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .aboutme__block--right {
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+  }
+}
+.aboutme__profile-image {
+  padding: 3rem 0 2rem 0;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .aboutme__profile-image {
+    padding: 0;
+  }
+}
+.aboutme__media {
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  .aboutme__media {
+    position: absolute;
+    bottom: 1.75rem;
+    left: 43.5%;
+  }
+}
+.aboutme__block--desc {
+  color: dimgray;
+  line-height: 1.25rem;
+  max-width: 31rem;
+  position: absolute;
+  right: 5%;
+}
+@media (max-width: 1023px) {
+  .aboutme__block--desc {
+    margin: auto;
+    max-width: 80%;
+    position: relative;
+    right: auto;
+  }
+}
+.aboutme__title {
+  color: #474141;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.skill {
+  background-image: url(../image/about/box.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  position: relative;
+}
+.skill:before {
+  background-color: black;
+  box-sizing: border-box;
+  opacity: .9;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.skill__block {
+  display: flex;
+  line-height: 1.5rem;
+  margin: auto;
+  padding: 3rem 0 6rem 4rem;
+  width: 60rem;
+  z-index: 2;
+}
+@media (max-width: 1023px) {
+  .skill__block {
+    display: block;
+    text-align: center;
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+}
+.skill__block--left {
+  width: 50%;
+}
+@media (max-width: 1023px) {
+  .skill__block--left {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+.skill__block--right {
+  width: 50%;
+}
+@media (max-width: 1023px) {
+  .skill__block--right {
+    margin-top: 4rem;
+    width: 100%;
+  }
+}
+.skill__block--desc {
+  width: 100%;
+  max-width: 25rem;
+  position: relative;
+  right: 0;
+}
+@media (max-width: 1023px) {
+  .skill__block--desc {
+    max-width: none;
+  }
+}
+.skill__title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.skill__subtitle {
+  font-weight: bold;
+}
+.skill__desc {
+  color: lightgray;
+}
+.skill__icon--baseball:before {
+  color: sandybrown;
+  content: "\f433";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}
+.skill__icon--basketball:before {
+  color: sandybrown;
+  content: "\f434";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}
+.skill__icon--web:before {
+  color: sandybrown;
+  content: "\f54f";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}
+.skill__icon--network:before {
+  color: sandybrown;
+  content: "\f6ff";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.exp {
+  color: dimgray;
+  display: flex;
+  position: relative;
+}
+.exp__block {
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  margin: auto;
+  padding: 3rem;
+  width: 60rem;
+  z-index: 2;
+}
+@media (max-width: 1023px) {
+  .exp__block {
+    display: block;
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+}
+.exp__title {
+  color: #474141;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.exp__wrap {
+  border-left: 3px solid whitesmoke;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+.exp__subtitle {
+  color: #474141;
+  font-weight: bold;
+  position: relative;
+}
+.exp__subtitle:before {
+  background-color: transparent;
+  border: 3px solid #2196f3;
+  border-radius: 100%;
+  content: '';
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 0;
+  left: -46px;
+}
+.exp__subtitle:after {
+  background-color: #2196f3;
+  border-radius: 100%;
+  content: '';
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 7px;
+  left: -39px;
+}
+.exp__company--foxconn:before {
+  border-color: #2962ff;
+}
+.exp__company--foxconn:after {
+  background-color: #2962ff;
+}
+.exp__company--frog-jump:before {
+  border-color: #6acc6c;
+}
+.exp__company--frog-jump:after {
+  background-color: #6acc6c;
+}
+.exp__company--is-land:before {
+  border-color: #e95513;
+}
+.exp__company--is-land:after{
+  background-color: #e95513;
+}
+.exp__period--foxconn {
+  line-height: 2.5rem;
+  color: #2962ff;
+}
+.exp__period--frog-jump {
+  line-height: 2.5rem;
+  color: #6acc6c;
+}
+.exp__period--is-land {
+  line-height: 2.5rem;
+  color: #e95513;
+}
+.exp__desc {
+  line-height: 1.75rem;
+}
+.exp__product {
+  font-style: italic;
+  font-weight: bold;
+}
+.exp__icon--web:before {
+  color: sandybrown;
+  content: "\f54f";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}
+.exp__icon--network:before {
+  color: sandybrown;
+  content: "\f6ff";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}
+.exp__icon--briefcase:before {
+  color: sandybrown;
+  content: "\f0b1";
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+}

@@ -1,0 +1,87 @@
+/* 
+ * https://wicoope.github.io/shotbreaks/
+ * v0.1.1-modified | 20181030
+ * License: WiCoope
+ */
+
+html {
+  background-color: white;
+  font-family: "Roboto";
+  font-size: 16px;
+  word-spacing: .25rem;
+}
+
+img {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+hr {
+  border-top: rgba(0, 0, 0, .1);
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+  transition-duration: .3s;
+}
+a:hover {
+  opacity: .8
+}
+
+@media (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ul {
+  display: block;
+  margin: .5rem 0 .5rem 2rem;
+}
+.li {
+  display: block;
+  margin: .5rem 0;
+  text-align: -webkit-match-parent;
+}
+.li--dot {
+  display: list-item;
+}
+.li--blue {
+  color: cornflowerblue;
+}
+.li__img {
+  width: 11rem;
+}
+
+.facebook:before {
+  color: #3B559F;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f082";
+}
+.line:before {
+  color: #00B900;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f3c0";
+}
+.linkedin:before {
+  color: #0077B5;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f08c";
+}
+.github:before {
+  color: dimgray;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f092";
+}
+.youtube:before {
+  color: red;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f431";
+}

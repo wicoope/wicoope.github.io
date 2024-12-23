@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Modify -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome! If you’re a fan of group card breaks, you’re in the right place. Whether it’s baseball, basketball, or trading card games, I’ll take you on a fun ride through the world of card collecting! Each box break is packed with excitement—chasing rare autographs, limited parallels, and big hits. I also share tips and insights about the card market to help you understand your collection’s worth. Subscribe now and join the thrill of group breaks—let’s pull some amazing cards together!"> <!-- Modify -->
+  <meta property="og:site_name" content="Shot Breaks">
+  <meta property="og:title"  content="Shot Breaks" /> <!-- Modify -->
+  <meta property="og:url" content="https://wicoope.github.io/"> <!-- Modify -->
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://wicoope.github.io/icon/w_brand_b.png">
+  <meta property="article:publisher" content="WiCoope">
+  <meta property="article:tag" content="TCG"> <!-- Modify -->
+  <title>WiCoope</title> <!-- Modify -->
+  <link rel="shortcut icon" href="icon/w_brand_b.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="thirdparty/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loading__block">
+    <span class="loading__icon"></span>
+  </div>
+  <div class="brand">
+    <a href="https://wicoope.github.io/">
+      <img src="icon/w_brand_w.png" class="brand--img"></span>
+    </a>
+  </div>
+  <div class="nav nav--dark">
+    <div class="nav__item nav__item--fade-out">
+      <a href="https://wicoope.github.io/" class="nav__item--link">About Me</a>
+    </div>
+    <div class="nav__item nav__item--fade-out">
+      <a href="https://wicoope.github.io/shotbreaks/" class="nav__item--link">Shot Breaks</a>
+    </div>
+  </div>
+  <div class="toggle">
+    <span class="toggle__bar toggle__bar--top toggle__bar--white"></span>
+    <span class="toggle__bar toggle__bar--mid toggle__bar--white"></span>
+    <span class="toggle__bar toggle__bar--bot toggle__bar--white"></span>
+  </div>
+  <header class="banner banner--valign" data-scroll-index="0" data-stellar-background-ratio="0.5">
+    <div class="brief">
+      <div class="brief__title">Hello</div>
+      <div class="brief__name">We're WiCoope</div>
+    </div>
+    <div class="arrow">
+      <a href="#" class="arrow--down"></a>
+    </div>
+  </header>
+  <section class="aboutme" data-scroll-index="1">
+    <div class="aboutme__block">
+      <div class="aboutme__block--left">
+        <img class="aboutme__profile-image" src="image/about/ball_player_with_tc.jpeg">
+        <div class="aboutme__media">
+          <a href="https://line.me/ti/g2/GUwDKw-GofrfQjXa8YhGDUmYHhGdE_lTylvPJQ" target="_blank" class="aboutme__media--line line"></a>
+          <a href="https://www.youtube.com/@SHOTBreaks" target="_blank" class="aboutme__media--youtube youtube"></a>
+        </div>
+      </div>
+      <div class="aboutme__block--right">
+        <div class="aboutme__block--desc">
+          <div class="aboutme__title">About Us</div>
+          <hr>
+          <div>Welcome! If you’re a fan of group card breaks, you’re in the right place. Whether it’s baseball, basketball, or trading card games, I’ll take you on a fun ride through the world of card collecting! Each box break is packed with excitement—chasing rare autographs, limited parallels, and big hits. I also share tips and insights about the card market to help you understand your collection’s worth. Join the thrill of group breaks—let’s pull some amazing cards together!</div>
+          <br>
+          <div>這裡是卡片團拆愛好者的集散地，無論是棒球、籃球還是交換卡片遊戲，我都會帶你一起探索卡片的魅力！每次開盒都有驚喜，從稀有簽名卡到限量平行卡，滿滿的期待感。還會分享卡片市場的資訊與小技巧，幫助你了解收藏的價值。快來和我們一起在團拆的世界裡，追逐夢想中的卡片吧！</div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer" data-scroll-index="4">
+    <div class="footer__brand">WiCoope</div>
+    <div class="footer__contact">
+      <a href="https://line.me/ti/g2/GUwDKw-GofrfQjXa8YhGDUmYHhGdE_lTylvPJQ" target="_blank" class="footer__contact--line line"></a>
+      <a href="https://www.youtube.com/@SHOTBreaks" target="_blank" class="footer__contact--youtube youtube"></a>
+    </div>
+    <div class="copyright">
+      <span>Copyright © </span>
+      <span class="copyright__year--from">2024</span>
+      <span class="copyright__year--to"></span>
+      <span> WiCoope All rights reserved.</div>
+  </div>
+  <script src="thirdparty/jquery/jquery-3.3.1.min.js"></script>
+  <script src="thirdparty/jquery/jquery-migrate-3.0.0.min.js"></script>
+  <script src="thirdparty/lazyload/lazyload-2.2.0.min.js"></script>
+  <script src="thirdparty/scrollIt/scrollIt.min.js"></script>
+  <script src="thirdparty/stellar/jquery.stellar.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    /*
+     * Add copyright info when occurs copy event.
+     */
+    function copyEvent(e) {
+      var selection = window.getSelection();
+      var support = selection + "<br/><br/>Please support original works and visit the original website: https://wicoope.github.io";
+      var temp = document.createElement("div");
+
+      //hide the newly created container
+      temp.style.position = "absolute";
+      temp.style.left = "-99999px";
+
+      //insert the container, fill it with the extended text, and define the new selection
+      document.body.appendChild(temp);
+      temp.innerHTML = support;
+      selection.selectAllChildren(temp);
+
+      window.setTimeout(function () {
+          document.body.removeChild(temp);
+      }, 100);
+    }
+    
+    if (window.navigator.userAgent.indexOf("Trident/") == -1) {
+      document.oncopy = copyEvent;
+      document.oncut = copyEvent;
+    } else {
+      document.getElementsByTagName("body")[0].addEventListener("copy", copyEvent);
+      document.onkeydown = function(e) {
+        var evt = window.event ? event : e;
+        if (evt.keyCode == 88 && evt.ctrlKey) {
+          copyEvent(e);
+        }
+      }
+    }
+
+    /*
+     * Display copyright info when the web page url doesn't match the right domain.
+     */
+    function dispalyCopyright(e) {
+      var ary = document.getElementsByClassName("copy--4cded166-498a-4bbc-ba95-3055dd460114"); // Modify
+      for (var i = 0; i < ary.length; i++) {
+        ary[i].style.display = e;
+      }
+    }
+
+    if (document.domain == "wicoope.github.io") {
+      dispalyCopyright("none");
+    } else {
+      dispalyCopyright("block");
+    }
+    
+    /*
+     * Auto generates the current year of footer copyright
+     */
+    if (!((new Date()).getFullYear().toString() == document.getElementsByClassName("copyright__year--from")[0].textContent)) {
+      document.getElementsByClassName("copyright__year--to")[0].innerHTML = " - " + (new Date()).getFullYear().toString();
+    }
+    
+    /*
+     * Lazy load images.
+     */
+    $("img.lazyload").lazyload({
+      effect : "fadeIn"
+    });
+  </script>
+</body>
+</html>
